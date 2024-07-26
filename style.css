@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+button {
+  border-radius: 0px;
+  border: none;
+  background-color: transparent;
+}
+input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.bg {
+  height: 100dvh;
+  background: #cc2b5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #753a88,
+    #cc2b5e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #753a88,
+    #cc2b5e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.heading {
+  padding-block: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: clamp(1rem, -0.875rem + 8.3333vw, 3.5rem);
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: auto;
+  max-width: 768px;
+  padding: 1rem;
+  border: 2px solid black;
+  /* flex-direction: column; */
+  font-size: 1.5rem;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background: linear-gradient(
+    to left,
+    rgba(116, 58, 136, 0.747),
+    rgba(204, 43, 94, 0.753)
+  );
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+/* .flex > * {
+  flex: 1 0 150px;
+} */
+.flex > * {
+  flex: 1 1 100%;
+}
+@media screen and (max-width: 768px) {
+  label {
+    font-size: 1rem;
+  }
+}
+#nmbr {
+  border-bottom: 1px solid white;
+  margin-block: 0.5rem;
+
+  padding: 0.2rem 0.4rem;
+}
+.btn-container {
+  text-align: center;
+}
+.btn {
+  cursor: pointer;
+  font-size: inherit;
+  border: 1px solid white;
+  padding: 0.2rem 0.4rem;
+  transition: transform 0.2s ease-in;
+}
+.btn:active {
+  transform: scale(0.9);
+}
+b {
+  padding-inline: 0.5rem;
+  color: yellow;
+}
+.result {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
